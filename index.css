@@ -64,6 +64,7 @@ main p {
 .buttons button:hover {
     background: hsl(217, 12%, 63%);
     color: white;
+    transition: 0.3s 0.6s ease-in;
 }
 
 main > div:first-of-type > button {
@@ -75,6 +76,13 @@ main > div:first-of-type > button {
     border: none;
     text-transform: uppercase;
     width: 100%;
+}
+
+main > div:first-of-type > button:hover {
+    color: hsl(25, 97%, 53%);
+    font-weight: 200;
+    background: white;
+    transition: 0.3s 0.6s  ease-in;
 }
 
 main > div:last-of-type {

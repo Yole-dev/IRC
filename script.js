@@ -17,17 +17,24 @@ const btnArr = [btn1, btn2, btn3, btn4, btn5]
 thankYouState.style.display = 'none';
 
 //button click function
-btnArr.forEach(function(el, i) {
+//achieved by looping over the btnArr array using the forEach method
+btnArr.forEach(function(el, i, arr) {
     const btnClick = el.addEventListener('click', function() {
         el.style.background = 'hsl(25, 97%, 53%)';
         el.style.color = 'white';
         rating = i + 1;
         ratingText.innerHTML = `You selected ${rating} out of 5`;
     });
+    
 
-    if (i >= 0) {
-        btnClick
+    if (i >= 0+1) {
+        btnClick 
+    } else if(i === 0) {
+        rating = 0;
+        ratingText.innerHTML = `You selected ${rating} out of 5`;
     }
+
+    console.log(btnClick === btnClick)
 });
 
 
@@ -40,4 +47,3 @@ submitBtn.addEventListener('click', function() {
     submitBtn.style.background = 'white';
 });
 
-console.log();
