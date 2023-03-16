@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Overpass', sans-serif;
     color: white;
     display: flex;
     flex-direction: column;
@@ -113,6 +113,6 @@ main > div:last-of-type p:first-of-type {
 
 @media screen and (max-width: 1440px)  {
     main {
-        width: 300px;
+        max-width: 400px;
     }
 }
