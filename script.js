@@ -25,9 +25,7 @@ btnArr.forEach(function(el, i) {
         ratingText.innerHTML = `You selected ${rating} out of 5`;
     });
 
-    if (i === 0) {
-        btnClick
-    } else {
+    if (i >= 0) {
         btnClick
     }
 });
